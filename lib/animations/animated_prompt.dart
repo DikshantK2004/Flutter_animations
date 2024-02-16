@@ -57,8 +57,9 @@ class _AnimatedPromptState extends State<AnimatedPrompt>
 
   @override
   void dispose() {
-    super.dispose();
     _controller.dispose();
+    super.dispose();
+    
   }
 
   @override
