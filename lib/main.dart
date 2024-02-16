@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/animations/axis_rotation.dart';
 import 'package:flutter_animations/animations/chained_animation.dart';
+import 'package:flutter_animations/animations/color_animation.dart';
 import 'package:flutter_animations/animations/implicit_animations.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false ,
       debugShowMaterialGrid: false,
-      home: const ImplicitAnimation(),
+      home: const ColorAnimation(),
     );
   }
 }
