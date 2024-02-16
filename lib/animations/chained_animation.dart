@@ -83,9 +83,9 @@ class _ChainedAnimationState extends State<ChainedAnimation>
 
   @override
   void dispose() {
-    super.dispose();
     _controller.dispose();
     _controller2.dispose();
+        super.dispose();
   }
 
   @override
@@ -95,6 +95,14 @@ class _ChainedAnimationState extends State<ChainedAnimation>
       ..forward();
 
     return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text(
+            'Chained Animation',
+          ),
+        ),
+        backgroundColor: Colors.black.withOpacity(0.8),
+      ),
         backgroundColor: Colors.white.withOpacity(0.4),
         body: Center(
           child: AnimatedBuilder(

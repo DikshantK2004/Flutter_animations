@@ -21,6 +21,14 @@ class _ColorAnimationState extends State<ColorAnimation> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text(
+            'Color Animation',
+          ),
+        ),
+        backgroundColor: Colors.black.withOpacity(0.8),
+      ),
       body: Center(
         child: TweenAnimationBuilder(
           tween: ColorTween(begin: Colors.red, end: _color),

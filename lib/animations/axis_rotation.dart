@@ -26,13 +26,22 @@ class _AxisRotationState extends State<AxisRotation>
 
   @override
   void dispose() {
-    super.dispose();
+   
     _controller.dispose();
+     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Center(
+          child: Text(
+            'Axis Rotation',
+          ),
+        ),
+        backgroundColor: Colors.black.withOpacity(0.8),
+      ),
       backgroundColor: Colors.white.withOpacity(0.4),
       body: Center(
         // animated Builder used to inform about rerendering of the widget

@@ -57,8 +57,8 @@ class _AnimatedPromptState extends State<AnimatedPrompt>
 
   @override
   void dispose() {
-    _controller.dispose();
     super.dispose();
+    _controller.dispose();
   }
 
   @override
@@ -71,7 +71,7 @@ class _AnimatedPromptState extends State<AnimatedPrompt>
       appBar: AppBar(
         title: const Center(
           child: Text(
-            'Icons',
+            'Animated Prompt',
           ),
         ),
         backgroundColor: Colors.black.withOpacity(0.8),

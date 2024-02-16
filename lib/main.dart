@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animations/animations/animated_prompt.dart';
-import 'package:flutter_animations/animations/axis_rotation.dart';
-import 'package:flutter_animations/animations/chained_animation.dart';
-import 'package:flutter_animations/animations/color_animation.dart';
-import 'package:flutter_animations/animations/implicit_animations.dart';
+import 'package:flutter_animations/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +18,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
-      home: const AnimatedPrompt(),
+      home: const HomePage(),
     );
   }
 }

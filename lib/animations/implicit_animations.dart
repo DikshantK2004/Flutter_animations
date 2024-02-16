@@ -19,7 +19,12 @@ class _ImplicitAnimationState extends State<ImplicitAnimation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Page'),
+        title: const Center(
+          child: Text(
+            'Implicit Animations',
+          ),
+        ),
+        backgroundColor: Colors.black.withOpacity(0.8),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
